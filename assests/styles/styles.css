@@ -84,7 +84,7 @@ article>h3 {
     font-size: 5vw;
     color: var(--letter-color);
 }
-#about-me div {
+/* #about-me div {
     position: relative;
     margin-top: 150px;
 }
@@ -109,6 +109,37 @@ article>h3 {
     padding: 10px;
     
     margin-right: 25px;
+} */
+#about-me {
+    position: relative;
+}
+#about-me div {
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#about-me img {
+    float: left;
+    margin-top: -80px;
+    position: static;
+    width: 150px;
+    border-radius: 20%;
+    box-shadow: 0 10px 10px;
+    margin-right: 10px;
+    box-shadow: 0 10px 10px black;
+}
+#about-me p {
+    position: inherit;
+    font-size: 14px;
+    color: var(--accent-color);
+    line-height: 1.5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-top: 150px;
+    margin-right: 25px;
+    margin-bottom: 50px
 }
 
 /* Styles for the Work Section */
