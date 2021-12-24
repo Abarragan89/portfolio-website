@@ -16,10 +16,10 @@
         <h1>Anthony Barragan</h1>
         <nav>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#about-me" class="links-font">About Me</a></li>
+                <li><a href="#work" class="links-font">Work</a></li>
+                <li><a href="#contact" class="links-font">Contact</a></li>
+                <li><a href="resume.html" class="links-font">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -30,14 +30,15 @@
     <!-- About Me -->
     <article id="about-me">
         <h3>About <br/>Me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus ipsum ipsam reprehenderit, ut in! Sed, minima id! Dolorem in ducimus ea tempora necessitatibus fugiat dicta nostrum voluptatem expedita vero!</p>
+        <img src="assests/images/profile-pic.JPG" alt="portrait of Anthony Barragan">
+        <p>My name is Anthony. I've been teaching in elementary schools for about 9 years. I have recently found a passion for coding and creating digital applications. I've used 'pandemic downtime' to teach myself how to code.I enjoy making interactive apps and games. I am currently enrolled in a course that covers the MERN stack.</p>
     </article>
     <!-- Work Section -->
     <article>
         <h3>Work</h3>
         <!-- Large photo --> 
         <section class="work">
-            <figure>
+            <figure id="jumbo-image">
                 <img src="assests/images/math-madness.png"
                 id="math-madness-pic" alt="This is a competitve multiplication game for kids. Try to answer as many questions as you can in 30 seconds and beat you friend's highscore!">
                 <div>
@@ -47,32 +48,32 @@
             </figure>
         <!-- Gallery of photos -->
             <section id="gallery">
-                <figure>
-                    <img src="assests/images/snake-game.png" width="200" id="snake-game-pic" alt="This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan">
+                <figure class="gallery-cards">                    
+                    <img src="assests/images/snake-game.png" width="260" id="snake-game-pic" alt="This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan">
                     <div>
                         <h4>Snake</h4>
                         <p>HTML/CSS/JS</p>
                     </div>
                 </figure>
-                <figure>
-                    <img src="assests/images/run-buddy.png" width="200" id="run-buddy-pic" alt="This a landing page for a fictional company called 'Run Buddy'. This site is fully responsive uses pure HTML and CSS.">
+                <figure class="gallery-cards">
+                    <img src="assests/images/run-buddy.png" width="250" id="run-buddy-pic" alt="This a landing page for a fictional company called 'Run Buddy'. This site is fully responsive uses pure HTML and CSS.">
                     <div>
                         <h4>Run Budddy</h4>
                         <p>HTML/CSS</p>
                     </div>
                 </figure>        
-                <figure>            
-                    <figure>
-                    <img src="assests/images/html-canvas.png" width="200"  id="html-canvas-pic" alt="This uses HTML canvas to create a interactive effect. This project came from a YouTube channel called 'Franks Laboratory'.">
+                <figure class="gallery-cards">            
+                    <img src="assests/images/html-canvas.png" width="250"  id="html-canvas-pic" alt="This uses HTML canvas to create a interactive effect. This project came from a YouTube channel called 'Franks Laboratory'.">
                     <div>
                         <h4>HTML Canvas</h4>
                         <p>HTML</p>
                     </div>
                 </figure> 
-                    <img src="assests/images/bootstrap-website.png" width="200" id="bootstrap-pic" alt="This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is fully responsive. This project came from an online tutorial by Brad Traversy">
+                <figure class="gallery-cards">
+                    <img src="assests/images/bootstrap-website.png" width="250" id="bootstrap-pic" alt="This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is fully responsive. This project came from an online tutorial by Brad Traversy">
                     <div>
                         <h4>Coding Bootcamp</h4>
-                        <p>HTML/CSS/Bootstrap</p>
+                        <p>Bootstrap</p>
                     </div>
                 </figure>        
                 <!-- <figure>
@@ -87,12 +88,15 @@
         
     </article>
     <!-- Contact Section -->
-    <div id="contact">
-        <h3>Contact</h3>
-        <p>(818)741-6845</p>
-        <a href="" class="fa fa-facebook"></a>
-        <a href="" class="fa fa-linkedin"></a>
-        <a href="" class="fa fa-google"></a>
-    </div>
+    <article>
+        <h3>Contact</h3>      
+        <div id="contact">
+            <a href="" class="links-font dark-letter">(818)741-6845</a>
+            <a href="" class="links-font dark-letter">anthonybar89@gmail.com</a> 
+            <a href="" class="links-font dark-letter">LinkedIn</a>
+            <a href="" class="links-font dark-letter">GitHub</a>
+        </div>
+    </article>
+
 </body>
 </html>

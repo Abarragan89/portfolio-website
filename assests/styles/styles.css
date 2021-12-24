@@ -1,7 +1,8 @@
 :root {
-    --accent-color: rgba(76, 187, 187, 0.95);
+    --accent-color: rgb(69, 185, 185);
     --primary-color: rgb(57, 63, 78);
-    --letter-color: rgb(62, 118, 155);
+    --letter-color: rgb(35, 90, 128);
+    --second-letter-clr: rgb(61, 33, 61);
 }
 * {
     padding: 0;
@@ -22,26 +23,28 @@ header {
 }
 header h1 {
     font-weight: lighter;
-    color:var(--primary-color);
+    color: var(--second-letter-clr);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 30px;
     background-color: var(--accent-color);
     padding-left: 8%;
     padding-right: 3%;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-bottom: 3px;
 }
 header nav ul li {
     list-style-type: none;
     display: inline-block;
+    margin-bottom: 17px;
+    margin-left: 5px;
 }
-header nav ul li a {
+.links-font {
     font-size: 2.3vh;
     text-decoration: none;
     text-align: center;;
-    padding: 0 3px 5px;
+    padding: 0 3px 3px;
     border-bottom: 4px solid var(--accent-color);
     color: var(--accent-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +54,7 @@ header nav ul li:not(:first-child) {
 }
 /* Styles for the Hero */
 #hero {
-    background-image: url("../images/hero-design.jpeg");
+    background-image: url("../images/hero-pic2.jpeg");
     height: 150px;
     position: relative;
 }
@@ -61,63 +64,123 @@ header nav ul li:not(:first-child) {
     top: 70%;
     right: 5%;
     background-color: var(--accent-color);
+    color: var(--second-letter-clr);
 }
 /* Styles for the About Me */
 article {
-    position: relative;
     padding-left: 25px;
     border-left: 2px solid var(--letter-color);
     margin-left: 25%;
+    margin-top: 5%;
 }
 
 article>h3 {
     position:relative;
     right: 110%;
     text-align: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 6vh;
     color: var(--letter-color);
 }
-#about-me {
-    margin-bottom: 40px;
-    margin-top: 25px;
-    text-align: left;
-}
-article>p {
+
+#about-me img {
+    width: 200px;
+    border-radius: 20%;
     position: relative;
-    top: -45px;
+    top: -100px;
+    right: -29px;
+    z-index: 1;
+    box-shadow: 0 10px 10px;
+}
+#about-me p {
+    color: var(--accent-color);
+    position: relative;
+    top: -250px;
+    line-height: 1.5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    padding: 10px;
+    padding-left: 250px;
+    margin-right: 25px;
 }
 
 /* Styles for the Work Section */
 .work {
+    position: relative;
+    top: -47px;
+}
+
+.work>figure {
+    margin-bottom: 30px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.work figure {
-    margin: 5px;
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    max-width: 85%;
+    max-width: 97%;
     height: auto;
 } 
 .work img {
     border: 5px solid var(--accent-color);
+    box-shadow: 0 10px 20px;
 }
 #gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 100%;
+    max-width: 97%;
     height: auto;
 }
-
-.work figure div {
+.gallery-cards div {
     position: relative;
-    color: black;
-    bottom: 30%;
+    background-color: var(--accent-color);
+    color: var(--second-letter-clr);
+    bottom: 35%;
+    width: 60%;
+    padding: 5px 0 5px 15px;
+    box-shadow: -5px 5px 10px;
+    left: 1%;
+    font-size: 1.8vh;
+}
+#jumbo-image div {
+    width: 60%;
+    position: absolute;
+    background-color: var(--accent-color);
+    color: var(--second-letter-clr);
+    bottom: 15%;
+    padding: 5px 0 5px 20px;
+    box-shadow: -5px 5px 10px;
+    font-size: 1.8vh;
+    left: .5%;
+}
+#jumbo-image div p {
+    font-size: 1.5em;
+}
+#jumbo-image div h4 {
+    font-size: 2em;
 }
 
+.gallery-cards h4 {
+    font-size: 1.2em
+}
+.gallery-cards p {
+    font-size: .9em;
+}
 
+/* Styles for Contact */
 
+#contact {
+    margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+    color: var(--second-letter-clr)
+}
+.dark-letter {
+    color: var(--second-letter-clr);
+    border-bottom-color: var(--second-letter-clr);
+    font-size: 2.5vh;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
