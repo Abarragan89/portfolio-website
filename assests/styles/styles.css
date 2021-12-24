@@ -80,91 +80,99 @@ article>h3 {
     text-align: right;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    font-size: 6vh;
+    font-size: 5vw;
     color: var(--letter-color);
 }
-
-#about-me img {
-    width: 200px;
-    border-radius: 20%;
+#about-me div {
     position: relative;
-    top: -100px;
-    right: -29px;
+    margin-top: 150px;
+}
+#about-me img {
+    width: 175px;
+    border-radius: 20%;
     z-index: 1;
-    box-shadow: 0 10px 10px;
+    box-shadow: 0 10px 10px black;
+    float:left;
+    position: inherit;
+    top: -100px;
+    margin-right: 10px;
+
 }
 #about-me p {
+    font-size: 14px;
     color: var(--accent-color);
     position: relative;
-    top: -250px;
+    top: -150px;
     line-height: 1.5;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--primary-color);
     padding: 10px;
-    padding-left: 250px;
+    
     margin-right: 25px;
 }
 
 /* Styles for the Work Section */
 .work {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: -47px;
 }
 
-.work>figure {
-    margin-bottom: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 97%;
-    height: auto;
-} 
 .work img {
     border: 5px solid var(--accent-color);
     box-shadow: 0 10px 20px;
+    width: 100%;
 }
 #gallery {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 97%;
-    height: auto;
+    justify-content: center;
+    max-width: 90%;
+}
+.gallery-cards {
+    margin-bottom: 10px;
+    position: relative;
+    flex: 1 250px;
+    margin-right: 15px;
+    
 }
 .gallery-cards div {
-    position: relative;
+    position: absolute;
     background-color: var(--accent-color);
     color: var(--second-letter-clr);
     bottom: 35%;
-    width: 60%;
+    width: 70%;
     padding: 5px 0 5px 15px;
     box-shadow: -5px 5px 10px;
     left: 1%;
-    font-size: 1.8vh;
 }
+#jumbo-image {
+    margin-bottom: 30px;
+    position: relative;
+    max-width: 90%;
+} 
 #jumbo-image div {
-    width: 60%;
+    width: 50%;
     position: absolute;
     background-color: var(--accent-color);
     color: var(--second-letter-clr);
     bottom: 15%;
     padding: 5px 0 5px 20px;
     box-shadow: -5px 5px 10px;
-    font-size: 1.8vh;
     left: .5%;
 }
 #jumbo-image div p {
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 #jumbo-image div h4 {
-    font-size: 2em;
+    font-size: 3vw;
 }
-
 .gallery-cards h4 {
-    font-size: 1.2em
+    font-size: 2vw;
 }
 .gallery-cards p {
-    font-size: .9em;
+    font-size: 1.5vw;
 }
 
 /* Styles for Contact */
@@ -175,12 +183,15 @@ article>h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 25px;
-    color: var(--second-letter-clr)
+    color: var(--second-letter-clr);
+}
+#contact a {
+    font-size: 2vw;
 }
 .dark-letter {
     color: var(--second-letter-clr);
     border-bottom-color: var(--second-letter-clr);
-    font-size: 2.5vh;
+    font-size: 2vh;
     margin-left: 10px;
     margin-bottom: 15px;
 }
