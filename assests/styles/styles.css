@@ -84,32 +84,6 @@ article>h3 {
     font-size: 5vw;
     color: var(--letter-color);
 }
-/* #about-me div {
-    position: relative;
-    margin-top: 150px;
-}
-#about-me img {
-    width: 175px;
-    border-radius: 20%;
-    z-index: 1;
-    box-shadow: 0 10px 10px black;
-    float:left;
-    position: inherit;
-    top: -100px;
-    margin-right: 10px;
-}
-#about-me p {
-    font-size: 20px;
-    color: var(--accent-color);
-    position: relative;
-    top: -150px;
-    line-height: 1.5;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--primary-color);
-    padding: 10px;
-    
-    margin-right: 25px;
-} */
 #about-me {
     position: relative;
 }
