@@ -1,8 +1,8 @@
 :root {
-    --accent-color: rgb(69, 185, 185);
-    --primary-color: rgb(57, 63, 78);
-    --letter-color: rgb(35, 90, 128);
-    --second-letter-clr: rgb(61, 33, 61);
+    --accent-color: rgb(102, 110, 139);
+    --primary-color: rgb(34, 42, 63);
+    --second-letter-clr: rgb(5, 18, 49);
+    --main-font: 'Nunito', sans-serif;
 }
 * {
     padding: 0;
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(231, 233, 247);
+    background-color: rgb(221, 223, 233);
 }
 /* Styles for the Header */
 header {
@@ -22,9 +22,9 @@ header {
     background-color: var(--primary-color);
 }
 header h1 {
-    font-weight: lighter;
+    font-weight: 600;
     color: var(--second-letter-clr);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--main-font);
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 35px;
@@ -32,32 +32,36 @@ header h1 {
     padding-left: 8%;
     padding-right: 3%;
     padding-top: 5px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 header nav ul li {
     list-style-type: none;
+    font-family: var(--main-font);
+    font-weight: 500;
+    letter-spacing: 1px;
     display: inline-block;
     margin-bottom: 17px;
     margin-left: 5px;
+    margin-right: 15px;
 }
-header nav ul li:hover {
-    background-color: var(--second-letter-clr);
-    padding: 2px 2px;
-    border-bottom-color: var(--accent-color);
+header nav ul li:hover, header nav ul li:hover a {
+    background-color: var(--accent-color);
+    color: var(--second-letter-clr);
+    font-weight: bold;
 }
 
 header nav ul li a:active {
-    color: white;
-
+    background-color: var(--letter-color);
 }
 .links-font {
-    font-size: 2.3vh;
+    font-size: 20px;
     text-decoration: none;
     text-align: center;;
     padding: 0 3px 3px;
     border-bottom: 4px solid var(--accent-color);
     color: var(--accent-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
+    font-weight: bold;
 }
 header nav ul li:not(:first-child) {
     margin-left: 25px;
@@ -69,60 +73,64 @@ header nav ul li:not(:first-child) {
     position: relative;
 }
 #hero h2 {
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
+    font-family: var(--main-font);
     padding: 5px;
-    top: 70%;
-    right: 5%;
+    top: 65%;
+    right: 3%;
     background-color: var(--accent-color);
     color: var(--second-letter-clr);
 }
 /* Styles for the About Me */
 article {
-    padding-left: 25px;
-    border-left: 2px solid var(--letter-color);
+    padding-left: 2%;
+    padding-right: 7%;
+    border-left: 4px solid var(--second-letter-clr);
     margin-left: 25%;
     margin-top: 5%;
 }
-
 article>h3 {
     position:relative;
     right: 110%;
     text-align: right;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-    font-size: 5vw;
-    color: var(--letter-color);
+    font-family:var(--main-font);
+    font-weight: 600;
+    font-size: 4vw;
+    color: var(--second-letter-clr);
 }
 #about-me {
     position: relative;
+
 }
 #about-me div {
     position: relative;
     margin-top: -150px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 1%;
+    padding-left: 4%;
 }
 #about-me img {
     float: left;
-    margin-top: -80px;
-    position: static;
-    width: 150px;
+    width: 250px;
+    margin-top: -15vw;
     border-radius: 20%;
     box-shadow: 0 10px 10px;
-    margin-right: 10px;
+    margin-right: 1%;
     box-shadow: 0 10px 10px black;
+    margin-bottom: 1%;
 }
 #about-me p {
+    border: 2px solid var(--second-letter-clr);
     position: inherit;
-    font-size: 18px;
-    color: var(--accent-color);
+    font-size: 22px;
+    text-align: right;
+    color: var(--second-letter-clr);
     line-height: 1.5;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--primary-color);
-    padding: 10px;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    padding: 2%;
     margin-top: 150px;
-    margin-right: 25px;
+    margin-right: 2vw;
     margin-bottom: 50px
 }
 
@@ -132,13 +140,13 @@ article>h3 {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -47px;
-    width: 95%;
+    width: 100%;
+    padding-left: 4%;
 }
 .work img {
-    border: 5px solid var(--accent-color);
+    border: 5px solid var(--primary-color);
     width: 100%;
-    opacity: .6;
+    opacity: .7;
 }
 #jumbo-image:hover img {
     opacity: 1;
@@ -150,43 +158,67 @@ article>h3 {
 #jumbo-image {
     margin-bottom: 30px;
     position: relative;
-    max-width: 100%;
+    max-width: 98%;
 } 
-#jumbo-image .tag {
-    width: 40%;
-}
 #gallery {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+#gallery-column1 {
+    flex: 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#gallery-column2{
+    display: flex;
+    flex: 1 50%;
+    flex-direction: column;
     justify-content: center;
 }
 .gallery-cards {
     margin-bottom: 10px;
     position: relative;
-    flex: 1 200px;
+    flex: 1 50%;
     margin-right: 20px;
 }
 .gallery-cards:hover img {
     opacity: 1;
     box-shadow: 0 10px 20px var(--second-letter-clr);
 }
+
 .gallery-cards:hover {
     cursor: pointer;
 }
 .tag {
     position: absolute;
+    border: 2px solid var(--second-letter-clr);
     background-color: var(--accent-color);
     color: var(--second-letter-clr);
     bottom: 20%;
-    width: 70%;
-    padding: 0 0 0 15px;
+    width: auto;
+    padding-right: 5%;
+    padding-left: 2%;
 }
-
 .tag h4 {
-    font-size: 2vw;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 1.7vw;
 }
 .tag p {
-    font-size: 1.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    
+}
+#jumbo-image .tag h4 {
+    font-size: 2.5vw;
+    
+}
+#jumbo-image .tag p {
+    font-size: 1.3vw;
 }
 /* Styles for Contact */
 

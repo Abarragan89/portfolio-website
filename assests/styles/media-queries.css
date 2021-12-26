@@ -1,53 +1,20 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     header {
         flex-direction: column;
     }
     header h1 {
         padding: 10px
     }
-    
     #about-me img {
-        float: left;
-        margin-top: -80px;
-        position: static;
         width: 150px;
-        border-radius: 20%;
-        box-shadow: 0 10px 10px;
-        margin-right: 10px;
-        box-shadow: 0 10px 10px black;
-    }
-    #about-me p {
-        position: inherit;
-        font-size: 14px;
-        color: var(--accent-color);
-        line-height: 1.5;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: var(--primary-color);
-        padding: 10px;
-        margin-top: 150px;
-        margin-right: 25px;
-        margin-bottom: 50px
-    }
-    .gallery-cards {
-        flex: 1 1 150px;
-    }
-    .tag h4 {
-        font-size: 18px;
-    }
-    .tag p {
-        font-size: 14px;
     }
 }
 @media screen and (max-width: 590px) {
     #about-me img {
         width: 120px;
-        margin-top: -60px;
     }
-    .gallery-cards {
-        flex: 1 150px;
-    }
-    #gallery {
-        max-width: 100%;
+    #about-me p {
+        font-size: 14px;
     }
     #jumbo-image {
         margin-bottom: 15px;
@@ -55,52 +22,88 @@
     .work img {
         border: 2px solid var(--accent-color);
     }
+    .links-font {
+        font-size: 14px;
+    }
+    header nav ul li {
+        margin-right: 2px;
+    }
 }
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 428px) {
+    #about-me img {
+        margin-bottom: 2%;
+    }
+    #about-me p {
+        font-size: 12px;
+    }
     #hero {
         height: 125px;
     }
     #hero h2 {
         top: 50%;
     }
-    article>h3 {
-        position:relative;
-        right: 115%;
-        text-align: right;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 500;
-        font-size: 5vw;
-        color: var(--letter-color);
-    }
-    .tag {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-    .tag h4 {
-        font-size: 8px;
-        font-weight: lighter;
-    }
-    .tag p {
-        font-size: 8px;
-        font-weight: lighter;
-        font-style: italic;
-    }
     .links-font {
-        font-size: 13px;
+        font-size: 12px;
     }
-    .gallery-cards {
-        flex: 1 83px;
-        margin-right: 5px;
-    }
-    .work {
-        width: 97%
-    }
-    #gallery {
-        justify-content: space-between;
-        width: 100%;
-    }
-    #contact a {
-        font-size: 10px;
+    article {
+        border-left-width: 3px;
     }
 }
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 25px;
+    }
+    #hero h2 {
+        font-size: 20px;
+    }
+    #about-me img {
+        width: 80px;
+    }
+    #about-me p {
+        font-size: 9;
+    }
+    .links-font {
+        font-size: 9px;
+        border-bottom-width: 2px;
+    }
+        header nav ul li {
+            margin-right: 3px;
+        }
+    article {
+        border-left-width: 2px;
+    }
+    .tag {
+        border-width: 1px;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+    header h1 {
+        font-size: 20px;
+        
+    }
+    .links-font {
+        font-size: 9px;
+        padding: 0;
+        margin: 0;
+    }
+    header nav ul li {
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+        
+    }
+    #about-me img {
+        width: 55px;
+    }
+    #about-me p {
+        text-align: right;
+        font-size: 9px;
+    }
+    .tag {
+        padding-left: 0;
+    }
+
+}
+/* @media screen and (max-width: ) */
