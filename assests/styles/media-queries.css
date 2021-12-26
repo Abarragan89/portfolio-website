@@ -2,8 +2,14 @@
     header {
         flex-direction: column;
     }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
     header h1 {
-        padding: 0 30px 0 30px;
+        padding: 0 10px 0 10px;
+        margin-top: 0;
+        width: auto;
+        text-align: center;
     }
     #about-me img {
         width: 150px;
@@ -82,6 +88,9 @@
     header h1 {
         font-size: 20px;
         
+    }
+    #hero h2 {
+        font-size: 15px;
     }
     .links-font {
         font-size: 9px;
