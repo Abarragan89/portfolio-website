@@ -40,6 +40,16 @@ header nav ul li {
     margin-bottom: 17px;
     margin-left: 5px;
 }
+header nav ul li:hover {
+    background-color: var(--second-letter-clr);
+    padding: 2px 2px;
+    border-bottom-color: var(--accent-color);
+}
+
+header nav ul li a:active {
+    color: white;
+
+}
 .links-font {
     font-size: 2.3vh;
     text-decoration: none;
@@ -105,7 +115,7 @@ article>h3 {
 }
 #about-me p {
     position: inherit;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--accent-color);
     line-height: 1.5;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -169,14 +179,14 @@ article>h3 {
     color: var(--second-letter-clr);
     bottom: 20%;
     width: 70%;
-    padding: 5px 0 5px 15px;
+    padding: 0 0 0 15px;
 }
 
 .tag h4 {
-    font-size: 22px;
+    font-size: 2vw;
 }
 .tag p {
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 /* Styles for Contact */
 

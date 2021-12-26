@@ -1,10 +1,11 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     header {
         flex-direction: column;
     }
     header h1 {
         padding: 10px
     }
+    
     #about-me img {
         float: left;
         margin-top: -80px;
@@ -56,6 +57,12 @@
     }
 }
 @media screen and (max-width: 495px) {
+    #hero {
+        height: 125px;
+    }
+    #hero h2 {
+        top: 50%;
+    }
     article>h3 {
         position:relative;
         right: 115%;
@@ -68,13 +75,14 @@
     .tag {
         width: 100%;
         text-align: center;
-        padding-left: 0;
+        padding: 0;
     }
     .tag h4 {
-        font-size: 14px;
+        font-size: 8px;
+        font-weight: lighter;
     }
     .tag p {
-        font-size: 10px;
+        font-size: 8px;
         font-weight: lighter;
         font-style: italic;
     }
