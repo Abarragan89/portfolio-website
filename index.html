@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Barragan</title>
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- custom styles -->
     <link rel="stylesheet" href="assests/styles/styles.css">
     <link rel="stylesheet" href="assests/styles/media-queries.css">
     <!-- Social Media Icons -->
@@ -13,13 +17,17 @@
     <!-- Google Font (Nunito) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Secular+One&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Secular+One&family=Source+Code+Pro:wght@500&display=swap"
+        rel="stylesheet">
     <!-- Bold Version of Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&family=Secular+One&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&family=Secular+One&family=Source+Code+Pro:wght@500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -39,98 +47,278 @@
     </section>
     <!-- About Me -->
     <article id="about-me">
-        <h3>About <br/>Me</h3>
+        <h3>About <br />Me</h3>
         <div>
-            <p><img src="assests/images/profile-pic.JPG" alt="portrait of Anthony Barragan">My name is Anthony. I've been teaching in elementary schools for about 9 years. I have recently found a passion for coding and creating digital applications. I've used 'pandemic downtime' to teach myself how to code.I enjoy making interactive apps and games and am currently enrolled in a course to learn the MERN stack.</p>
+            <p><img src="assests/images/profile-pic.JPG" alt="portrait of Anthony Barragan">My name is Anthony. I've
+                been teaching in elementary schools for about 9 years. I have recently found a passion for coding and
+                creating digital applications. I've used 'pandemic downtime' to teach myself how to code.I enjoy making
+                interactive apps and games and am currently enrolled in a course to learn the MERN stack.</p>
         </div>
     </article>
     <!-- Work Section -->
     <article id="work">
         <h3>Work</h3>
-        <!-- Large photo --> 
+        <!-- Large photo -->
         <section class="work">
-            <a href="https://abarragan89.github.io/math_madness/">
-                <figure id="jumbo-image">
-                    <img src="assests/images/math-madness.png"
-                    id="math-madness-pic" alt="This is a competitve multiplication game for kids. Try to answer as many questions as you can in 30 seconds and beat you friend's highscore!">                
-                    <div class="tag">
-                        <h4>Math Madness</h4>
-                        <p>HTML/CSS/JS</p>
-                    </div>
-                </figure>
-            </a>
-        <!-- Gallery of photos -->
+            <figure id="jumbo-image" class="js-modal-trigger" data-target="dinner-drinks-modal">
+                <img src="assests/images/dinner-drinks.png"
+                    alt="This is a food and alcohol recipe finder. You can search food by cuisine and dietary restrictions and alcohol by liquor type.">
+                <div class="tags">
+                    <h4>Dinner&Drinks</h4>
+                    <p>HTML/CSS/JS/BULMA</p>
+                </div>
+            </figure>
+            <!-- Gallery of photos -->
             <section id="gallery">
                 <section id="gallery-column1">
-                    <figure class="gallery-cards">
-                        <a href="https://abarragan89.github.io/html_canvas/" target="_blank">           
-                            <img src="assests/images/html-canvas.png"   id="html-canvas-pic" alt="This uses HTML canvas to create a interactive effect. This project came from a YouTube channel called 'Franks Laboratory'.">
-                            <div class="tag">
-                                <h4>HTML Canvas</h4>
-                                <p>HTML</p>
-                            </div>
-                        </a> 
-                    </figure> 
-                    <figure class="gallery-cards">
-                        <a href="https://abarragan89.github.io/bootstrap_website/" target="_blank">
-                            <img src="assests/images/bootstrap-website.png"  id="bootstrap-pic" alt="This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is fully responsive. This project came from an online tutorial by Brad Traversy">
-                            <div class="tag">
-                                <h4>Coding Bootcamp</h4>
-                                <p>Bootstrap</p>
-                            </div>
-                        </a>
+                    <figure class="gallery-cards js-modal-trigger" data-target="math-madness-modal">
+                        <img src="assests/images/Math-madness.png"
+                            alt="This is a competitve multiplication game for kids. Try to answer as many questions as you can in 30 seconds and beat you friend's highscore!">
+                        <div class="tags">
+                            <h4>Math Madness</h4>
+                            <p>HTML/CSS/JS</p>
+                        </div>
                     </figure>
-                    <figure class="gallery-cards">   
-                        <a href="https://abarragan89.github.io/snake-game/" target="_blank">               
-                            <img src="assests/images/snake-game.png"  id="snake-game-pic" alt="This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan">
-                            <div class="tag">
+                    <figure class="gallery-cards js-modal-trigger" data-target="work-scheduler-modal">
+                        <img src="assests/images/work-scheduler.png"
+                            alt="This is a program that uses current time to track tasks.">
+                        <div class="tags">
+                            <h4>Work Scheduler</h4>
+                            <p>HTML/Bootstrap/JS</p>
+                        </div>
+                    </figure>
+                    <figure class="gallery-cards js-modal-trigger" data-target="bootcamp-modal">
+                        <img src="assests/images/bootstrap-website.png"
+                            alt="This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is fully responsive. This project came from an online tutorial by Brad Traversy">
+                        <div class="tags">
+                            <h4>Coding Bootcamp</h4>
+                            <p>Bootstrap</p>
+                        </div>
+                    </figure>
+                    <figure class="gallery-cards js-modal-trigger" data-target="snake-game-modal">
+            
+                            <img src="assests/images/snake-game.png"
+                                alt="This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan">
+                            <div class="tags">
                                 <h4>Snake</h4>
                                 <p>HTML/CSS/JS</p>
                             </div>
-                        </a>  
-                        </figure>
+                    
+                    </figure>
                 </section>
                 <section id="gallery-column2">
-                    <figure class="gallery-cards">
-                        <a href="https://abarragan89.github.io/run-buddy/" target="_blank">
-                            <img src="assests/images/run-buddy.png"  id="run-buddy-pic" alt="This a landing page for a fictional company called 'Run Buddy'. This site is fully responsive uses pure HTML and CSS.">
-                            <div class="tag">
-                                <h4>Run Buddy</h4>
-                                <p>HTML/CSS</p>
-                            </div>
-                        </a>
-                    </figure>        
-                    <figure class="gallery-cards">
-                        <a href="https://abarragan89.github.io/treasure-map/" target="_blank">
-                            <img src="assests/images/treasure-map.png" alt="a game where you have to click randomly and use your 'hot' and 'cold' clues to find the treasure">
-                            <div class="tag">
-                                <h4 >Treasure Map</h4>
-                                <p>JS/HTML</p>
-                            </div>
-                        </a>
+                    <figure class="gallery-cards js-modal-trigger" data-target="weather-watcher-modal">
+                        <img src="assests/images/weather-watcher.png"
+                            alt="This a program that gets data from Open Weather API and displays weather info for that city">
+                        <div class="tags">
+                            <h4>Weather Watcher</h4>
+                            <p>HTML/CSS/JS</p>
+                        </div>
                     </figure>
-                    <figure class="gallery-cards">
-                        <a href="https://abarragan89.github.io/week-2-challenge/" target="_blank">
-                            <img src="assests/images/portfolio-website.png" alt="my portfolio website">
-                            <div class="tag">
-                                <h4 >Porfolio Map</h4>
-                                <p>HTML/CSS</p>
+                    <figure class="gallery-cards js-modal-trigger" data-target="run-buddy-modal">
+                        <img src="assests/images/run-buddy.png"
+                            alt="This a landing page for a fictional company called 'Run Buddy'. This site is fully responsive uses pure HTML and CSS.">
+                        <div class="tags">
+                            <h4>Run Buddy</h4>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </figure>
+                    <figure class="gallery-cards js-modal-trigger" data-target="treasure-map-modal">
+                        <img src="assests/images/treasure-map.png"
+                            alt="a game where you have to click randomly and use your 'hot' and 'cold' clues to find the treasure">
+                        <div class="tags">
+                            <h4>Treasure Map</h4>
+                            <p>JS/HTML</p>
+                        </div>
+                    </figure>
+                    <figure class="gallery-cards js-modal-trigger" data-target="html-canvas-modal">
+                            <img src="assests/images/html-canvas.png"
+                                alt="This uses HTML canvas to create a interactive effect. This project came from a YouTube channel called 'Franks Laboratory'.">
+                            <div class="tags">
+                                <h4>HTML Canvas</h4>
+                                <p>HTML</p>
                             </div>
-                        </a>
                     </figure>
                 </section>
             </section>
         </section>
     </article>
+    <!-- Modals -->
+    <!-- Modal for Dinner Drinks -->
+    <div class="modal" id="dinner-drinks-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/dinner-drinks.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions,
+                or liquor available. This uses the Spoonacular and Cocktails DB APIs.
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://abarragan89.github.io/dinner-drinks/" target="_blank">Click Here to visit the site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
+    <!-- Modal for Math Madness -->
+    <div class="modal" id="math-madness-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/math-madnes-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a program that tests students multiplication skills. The user has 30 seconds to answer as many
+                questions as they can. The faster they answer, the more points are added to the score. High score is
+                saved so competitors can battle for first place!
+            </div>
+            <div class="block has-text-centered">
+                <a href=" https://abarragan89.github.io/math_madness/" target="_blank">Click Here to visit the site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close">X</button>
+        </div>
+    </div>
+    <!-- Modal for Weather Watcher -->
+    <div class="modal" id="weather-watcher-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/weather-watcher-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This a program that gets data from Open Weather API and displays weather info for that city. It will
+                display the current weather information was well as a five day forecast. It will save your recent
+                searches in local storage.
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://abarragan89.github.io/weather-watcher/" target="_blank">Click Here to visit the
+                    site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close">X</button>
+        </div>
+    </div>
+    <!-- Modal for Work Scheduler -->
+    <div class="modal" id="work-scheduler-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/work-scheduler-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a program that uses current time to track tasks. The task bars are colored coded depending on
+                whether they are in the past, present, or future. Task can be saved by clicking on the save button.
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://abarragan89.github.io/daily-work-scheduler/" target="_blank">Click Here to visit the
+                    site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close">X</button>
+        </div>
+    </div>
+    <!-- Modal for Run Buddy -->
+    <div class="modal" id="run-buddy-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/run-buddy-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This a mock landing page for a fictional company called 'Run Buddy'. This site is fully responsive uses
+                pure HTML and CSS.
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://abarragan89.github.io/run-buddy/" target="_blank">Click Here to visit the
+                    site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close">X</button>
+        </div>
+    </div>
+    <!-- Modal for Bootcamp -->
+    <div class="modal" id="bootcamp-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/bootcamp-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is
+                fully responsive. This project came from an online tutorial by Brad Traversy
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://abarragan89.github.io/bootstrap_website/" target="_blank">Click Here to visit the
+                    site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close">X</button>
+        </div>
+    </div>
+    <!-- Modal for Treasure Map -->
+    <div class="modal" id="treasure-map-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/treasure-map-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a game where you have to click on a page and find the buried treasure. Use the "hot" and "cold"
+                clues to help you!
+                <div class="block has-text-centered">
+                    <a href="https://abarragan89.github.io/treasure-map/" target="_blank">Click Here to visit the
+                        site!</a>
+                </div>
+                <button class="modal-close is-large" aria-label="close">X</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Snake Game -->
+    <div class="modal" id="snake-game-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/snake-game-large.png" alt="">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan
+                <div class="block has-text-centered">
+                    <a href="https://abarragan89.github.io/snake-game/" target="_blank">Click Here to visit the
+                        site!</a>
+                </div>
+                <button class="modal-close is-large" aria-label="close">X</button>
+            </div>
+        </div>
+    </div>
+        <!-- Modal for HTML Canvas -->
+        <div class="modal" id="html-canvas-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-background-white p-5">
+                <div class="container">
+                    <img src="assests/images/html-canvas-large.png" alt="">
+                </div>
+                <div class="block has-text-centered subtitle">
+                    This uses HTML canvas to create an interactive effect. This project came from a YouTube channel called 'Franks Laboratory.
+                    <div class="block has-text-centered">
+                        <a href="https://abarragan89.github.io/html_canvas/" target="_blank">Click Here to visit the
+                            site!</a>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close">X</button>
+                </div>
+            </div>
+        </div>
+
+
     <!-- Contact Section -->
     <article>
-        <h3>Contact</h3>      
+        <h3>Contact</h3>
         <div id="contact">
             <a href="tel:8187416845" class="links-font dark-letter">(818)741-6845</a>
-            <a href="mailto:anthonybar89@gmail.com" target="_blank" class="links-font dark-letter">anthonybar89@gmail.com</a> 
-            <a href="https://www.linkedin.com/in/anthony-barragan-ba4a12226" class="links-font dark-letter" target="_blank">LinkedIn</a>
+            <a href="mailto:anthonybar89@gmail.com" target="_blank"
+                class="links-font dark-letter">anthonybar89@gmail.com</a>
+            <a href="https://www.linkedin.com/in/anthony-barragan-ba4a12226" class="links-font dark-letter"
+                target="_blank">LinkedIn</a>
             <a href="https://github.com/Abarragan89" class="links-font dark-letter" target="_blank">GitHub</a>
         </div>
     </article>
+    <script src="assests/js/index.js"></script>
 </body>
+
 </html>
