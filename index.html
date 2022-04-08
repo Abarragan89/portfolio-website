@@ -52,7 +52,7 @@
             <p><img src="assests/images/profile-pic.JPG" alt="portrait of Anthony Barragan">My name is Anthony. I've
                 been teaching in elementary schools for about 9 years. I have recently found a passion for coding and
                 creating digital applications. I've used 'pandemic downtime' to teach myself how to code.I enjoy making
-                interactive apps and games and am currently enrolled in a course to learn the MERN stack.</p>
+                interactive apps and games and have a focus on the MERN stack.</p>
         </div>
     </article>
     <!-- Work Section -->
@@ -60,17 +60,24 @@
         <h3>Work</h3>
         <!-- Large photo -->
         <section class="work">
-            <figure id="jumbo-image" class="js-modal-trigger" data-target="dinner-drinks-modal">
-                <img src="assests/images/dinner-drinks.png"
-                    alt="This is a food and alcohol recipe finder. You can search food by cuisine and dietary restrictions and alcohol by liquor type.">
+            <figure id="jumbo-image" class="js-modal-trigger" data-target="expense-tracker-modal">
+                <img src="assests/images/expense-tracker-large.png"
+                    alt="landing page for the expense tracker app">
                 <div class="tags">
-                    <h4>Dinner&Drinks</h4>
-                    <p>HTML/CSS/JS/BULMA</p>
+                    <h4>Expense Tracker</h4>
+                    <p>Node.js Full-Stack App</p>
                 </div>
             </figure>
             <!-- Gallery of photos -->
             <section id="gallery">
                 <section id="gallery-column1">
+                    <figure class="gallery-cards js-modal-trigger" data-target="dinner-drinks-modal">
+                        <img src="assests/images/dinner-drinks.png" alt="This is a food and alcohol recipe finder. You can search food by cuisine and dietary restrictions and alcohol by liquor type.">
+                        <div class="tags">
+                            <h4>Dinner&Drinks</h4>
+                            <p>HTML/CSS/JS/BULMA</p>
+                        </div>
+                    </figure>
                     <figure class="gallery-cards js-modal-trigger" data-target="math-madness-modal">
                         <img src="assests/images/math-madness.png" alt="This is a competitve multiplication game for kids. Try to answer as many questions as you can in 30 seconds and beat you friend's highscore!">
                         <div class="tags">
@@ -86,23 +93,13 @@
                             <p>HTML/Bootstrap/JS</p>
                         </div>
                     </figure>
-                    <figure class="gallery-cards js-modal-trigger" data-target="bootcamp-modal">
-                        <img src="assests/images/bootstrap-website.png"
-                            alt="This is a landing page for a fictional coding bootcamp company. This used the bootstrap framework and is fully responsive. This project came from an online tutorial by Brad Traversy">
-                        <div class="tags">
-                            <h4>Coding Bootcamp</h4>
-                            <p>Bootstrap</p>
-                        </div>
-                    </figure>
                     <figure class="gallery-cards js-modal-trigger" data-target="snake-game-modal">
-            
                             <img src="assests/images/snake-game.png"
                                 alt="This is a replica of the classic 'snake game'. This project came from 'JavaScript For Kids' by Nick Morgan">
                             <div class="tags">
                                 <h4>Snake</h4>
                                 <p>HTML/CSS/JS</p>
                             </div>
-                    
                     </figure>
                 </section>
                 <section id="gallery-column2">
@@ -143,12 +140,28 @@
         </section>
     </article>
     <!-- Modals -->
+    <!-- Modal for Expense Tracker -->
+    <div class="modal" id="expense-tracker-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <div class="container">
+                <img src="assests/images/expense-tracker-large.png">
+            </div>
+            <div class="block has-text-centered subtitle">
+                This is a program that helps you keep track of expenses. In a world of debit cards and one-click shopping, it's easy to lose tracker of purchases. This application stores your purchases and provides visual data so you can more easy track your expenese and know when you've spent too much in one month. This is a full-stack Node.js program. 
+            </div>
+            <div class="block has-text-centered">
+                <a href="https://floating-dusk-25843.herokuapp.com/" target="_blank">Click Here to visit the site!</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
     <!-- Modal for Dinner Drinks -->
     <div class="modal" id="dinner-drinks-modal">
         <div class="modal-background"></div>
         <div class="modal-content has-background-white p-5">
             <div class="container">
-                <img src="assests/images/dinner-drinks.png" alt="">
+                <img src="assests/images/dinner-drinks-large.png" alt="">
             </div>
             <div class="block has-text-centered subtitle">
                 This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions,
